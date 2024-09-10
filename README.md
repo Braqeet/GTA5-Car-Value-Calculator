@@ -1,61 +1,56 @@
-
-# Car Value Calculator (GUI Version)
+# Car Value Calculator
 
 This Python project calculates the full value of a car, including upgrades, by reversing the in-game resale deductions from **GTA Online**. The game applies a 60% deduction to the base car value and a 50% deduction to the value of upgrades. This updated version of the script provides a graphical user interface (GUI) using the **Tkinter** library to make it easier to use.
 
 ## Features
 
-- **GUI Interface**: Users can input the car's purchase price and sell price through a simple, user-friendly graphical interface.
-- **Full Value Calculation**: The app automatically calculates the full value of the car, including the upgrades, by reversing the in-game deductions.
-- **Input Validation**: The app includes error handling for invalid inputs (such as non-numeric values).
-- **No Command Line Required**: This version does not require any command-line interaction and can be easily used by anyone with a Python interpreter.
+* **GUI Interface**: Users can input the car's purchase price and sell price through a simple, user-friendly graphical interface.
+* **Full Value Calculation**: The app automatically calculates the full value of the car, including the upgrades, by reversing the in-game deductions.
 
 ## How to Run
 
-### 1. Clone the Repository
-First, clone the repository to your local machine using the following command:
+### Option 1: Run from Source Code
 
-```bash
-git clone https://github.com/your-username/repository-name.git
-```
+1. **Clone the Repository**: First, clone the repository to your local machine using the following command:
 
-### 2. Install Tkinter
-Ensure you have Tkinter installed on your machine. For most Python installations, Tkinter comes pre-installed, but if needed, you can install it as follows:
+   ```bash
+   git clone https://github.com/Braqeet/GTA5-Car-Value-Calculator.git
+   ```
 
-- **Linux**: `sudo apt-get install python3-tk`
-- **Windows** & **Mac**: Tkinter should be included by default with your Python installation.
+2. **Navigate to the Project Directory**: Change to the project directory:
 
-### 3. Run the Application
+   ```bash
+   cd GTA5-Car-Value-Calculator\src
+   ```
 
-Navigate to the project directory and run the Python script using:
+3. **Run the Script**: Execute the Python script:
 
-```bash
-python car_value_calculator_gui.py
-```
+   ```bash
+   python car_calc.py
+   ```
 
-The graphical interface will launch, and you can input the **purchase price** and **sell price** to get the full car value.
+### Option 2: Run the Executable (Windows Only)
 
-### 4. Example
+1. **Download the Executable**: Download the `car_calc.exe` file from the releases page.
+2. **Run the Executable**: Double-click the downloaded file to run the application. **Note**: You may encounter a "Windows protected your PC" warning when trying to run the .exe file. This is a security feature of Windows designed to protect against potentially harmful software. To run the application:
+    * Click on "More info" in the warning dialog.
+    * Then click "Run anyway".
+## How to Use
 
-1. Input the **purchase price**: `1,000,000`
-2. Input the **sell price**: `728,135`
-3. After pressing "Calculate," the result will be displayed as:
-
-```
-Full car value (including upgrades): $1,256,270.00
-```
+1. Enter the **Purchase Price** of the car in the first input field.
+2. Enter the **Sell Price** of the car in the second input field.
+3. Click the **Calculate** button.
+4. The app will display the **Full Value** of the car, including upgrades.
 
 ## Requirements
 
-- **Python 3.x**
-- **Tkinter**: A built-in Python library for creating graphical user interfaces.
+* Python 3.x
+* Tkinter (usually comes pre-installed with Python)
 
-## File Structure
+## Contributing
 
-- `car_value_calculator_gui.py`: The main Python script that runs the GUI application.
-- `.gitignore`: Specifies files to be ignored by Git (such as virtual environment files, logs, etc.).
-- `README.md`: Documentation for the project.
+Contributions, issues, and feature requests are welcome. Feel free to check [issues page](https://github.com/yourusername/car-value-calculator/issues) if you want to contribute.
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
