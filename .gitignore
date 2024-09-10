@@ -1,26 +1,22 @@
+# Ignore build directories
+build/
+dist/
+*.egg-info/
 
-### 2. **.gitignore**
-This file excludes unnecessary files from being tracked by Git, such as PyCharm's `.idea` folder and Python bytecode files.
+# Ignore PyInstaller spec files
+*.spec
 
-```bash
-# Ignore Python bytecode
-__pycache__/
-*.py[cod]
-
-# Ignore PyCharm project files
-.idea/
-
-# Ignore virtual environments
-venv/
-env/
+# Ignore environment configuration files
 *.env
 
-# Ignore system-specific files
-.DS_Store
-Thumbs.db
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
 
-# Ignore logs
-*.log
+# Ignore coverage reports
+.coverage
+.coverage.*
+*.cover
 
-# Ignore compiled Python files
-*.pyc
+# Ignore mypy and other static analysis results
+.mypy_cache/
+.pytype/
