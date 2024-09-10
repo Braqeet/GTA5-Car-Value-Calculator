@@ -1,0 +1,26 @@
+
+### 2. **.gitignore**
+This file excludes unnecessary files from being tracked by Git, such as PyCharm's `.idea` folder and Python bytecode files.
+
+```bash
+# Ignore Python bytecode
+__pycache__/
+*.py[cod]
+
+# Ignore PyCharm project files
+.idea/
+
+# Ignore virtual environments
+venv/
+env/
+*.env
+
+# Ignore system-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore logs
+*.log
+
+# Ignore compiled Python files
+*.pyc
